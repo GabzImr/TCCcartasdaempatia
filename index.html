@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartas e Caminhos — Menu</title>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<link rel="stylesheet" href="effects-floating.css">
+<script src="effects-floating.js" defer></script>
+
+
+
+<body>
+ <main class="title-screen" role="application" aria-label="Menu principal do jogo Cartas e Caminhos">
+   
+    <div class="bg-wrap" aria-hidden="true">
+      <img class="bg-img" src="cenario.png" alt="" />
+      <div class="grain"></div>
+    </div>
+
+    
+    <div class="layout">
+      <h1 class="game-title">CARTAS E CAMINHOS</h1>
+      <div class="flying-letters">
+  <img src="carta1.png" class="letter l1">
+  <img src="carta2.png" class="letter l2">
+  <img src="carta3.png" class="letter l3">
+  <img src="carta4.png" class="letter l4">
+</div>
+
+
+      <div class="scene">
+        <div class="left">
+          
+          <div class="postman-sprite" aria-hidden="true"></div>
+        </div>
+
+        <div class="right">
+          <nav class="menu" role="menu" aria-label="Menu principal">
+            <button class="menu-btn focused" id="startBtn" role="menuitem">JOGAR</button>
+            
+            <button class="menu-btn" id="quitBtn" role="menuitem">SAIR</button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    
+    <div id="optionsModal" class="modal" aria-hidden="true" role="dialog" aria-label="Opções do jogo">
+      <div class="modal-inner">
+        <h2>Opções</h2>
+        <label>
+          Volume
+          <input type="range" id="volumeRange" min="0" max="100" value="70" />
+        </label>
+        <button id="closeOptions" class="small-btn">Voltar</button>
+      </div>
+    </div>
+
+
+    <div id="gamePlaceholder" class="game-screen" aria-hidden="true">
+      <div class="game-inner">
+        <h2>Jogo iniciado</h2>
+        <p>(Substitua pelo seu jogo)</p>
+        <button id="backToMenu" class="small-btn">Voltar ao menu</button>
+      </div>
+    </div>
+  </main>
+
+<div class="postman-walk">
+  <img src="carteiro.png" alt="Carteiro andando">
+</div>
+
+<div class="left">
+  <div class="postman-sprite" id="carteiro" aria-hidden="true"></div>
+</div>
+
+
+<script src="script.js"></script>
+<script src="effects.js"></script>
+
+
+
+</body>
+</html>
+
+</body>
+</html>
