@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   instrBtn.className = "menu-btn";
   instrBtn.textContent = "INSTRUÇÕES";
 
-  // INSERIR ENTRE JOGAR (0) E SAIR (1)
+  
   menu.insertBefore(instrBtn, document.getElementById("quitBtn"));
 
   buttons.push(instrBtn);
@@ -98,7 +98,7 @@ let etica = 0;
 
 const scenarios = [
   { 
-    bg: 'bg1.png', 
+    bg: 'img/bg1.png', 
     character: 'person1.png',
     event: 'O carteiro encontra uma casa sem número, mas o nome na carta parece familiar.',
     options: [
@@ -108,7 +108,7 @@ const scenarios = [
     ]
   },
   { 
-    bg: 'bg2.png', 
+    bg: 'img/bg2.png', 
     event: 'Um cachorro machucado está na calçada, parece ter dono.', 
     options: [
       { text: 'Avisar um morador e seguir o trabalho.', ambicao: 0, empatia: 1, coragem: 0 },
@@ -117,7 +117,7 @@ const scenarios = [
     ]
   },
   { 
-    bg: 'bg3.png',
+    bg: 'img/bg3.png',
     event: 'Uma criança triste o vento levou sua carta antes de ser entregue.', 
     options: [
       { text: 'Parar a entrega e ajudar o menino a escrever outra.', ambicao: 0, empatia: 2, coragem: 1 },
@@ -126,7 +126,7 @@ const scenarios = [
     ]
   },
   {  
-    bg: 'bg4.png', 
+    bg: 'img/bg4.png', 
     event: 'Uma carta sem remetente, com teu próprio nome escrito.', 
     options: [
       { text: 'Abrir e ler.', ambicao: 1, empatia: 1, coragem: 1, letter: true },
@@ -135,7 +135,7 @@ const scenarios = [
     ] 
   },
   {
-    bg: "bg5.png",
+    bg: "img/bg5.png",
     event: "Uma senhora pede ajuda para carregar caixas até o portão.",
     options: [
       { text: "Ajudar a senhora", empatia: 2, ambicao: 0, coragem: 1, adapt: 1, etica: 2 },
@@ -143,7 +143,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg6.png",
+    bg: "img/bg6.png",
     event: "Um jovem pede para entregar uma carta em outra cidade.",
     options: [
       { text: "Aceitar o desafio", empatia: 1, ambicao: 1, coragem: 2, adapt: 2, etica: 1 },
@@ -151,7 +151,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg7.png",
+    bg: "img/bg7.png",
     event: "Uma criança corre e quase derruba as cartas.",
     options: [
       { text: "Sorrir e ajudar a organizar", empatia: 2, ambicao: 0, coragem: 1, adapt: 1, etica: 2 },
@@ -159,7 +159,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg8.png",
+    bg: "img/bg8.png",
     event: "Um morador irritado reclama de uma entrega atrasada.",
     options: [
       { text: "Pedir desculpas e explicar com calma", empatia: 2, ambicao: 0, coragem: 1, adapt: 1, etica: 2 },
@@ -167,7 +167,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg9.png",
+    bg: "img/bg9.png",
     event: "Você encontra uma carteira caída na rua.",
     options: [
       { text: "Devolver ao dono", empatia: 1, ambicao: 0, coragem: 1, adapt: 0, etica: 3 },
@@ -175,7 +175,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg10.png",
+    bg: "img/bg10.png",
     event: "Uma tempestade forte começa durante as entregas.",
     options: [
       { text: "Seguir trabalhando apesar da chuva", empatia: 1, ambicao: 1, coragem: 3, adapt: 2, etica: 1 },
@@ -183,7 +183,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg11.png",
+    bg: "img/bg11.png",
     event: "Durante uma entrega, um morador idoso convida o carteiro para tomar um café e conversar.",
     options: [
       { text: "Aceitar o convite e ouvir suas histórias", empatia: 2, ambicao: 0, coragem: 0, adapt: 1, etica: 2 },
@@ -191,7 +191,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg12.png",
+    bg: "img/bg12.png",
     event: "Você encontra um colega carteiro com o carro quebrado no meio do caminho.",
     options: [
       { text: "Ajudar o colega a empurrar o carro", empatia: 2, ambicao: 0, coragem: 1, adapt: 1, etica: 2 },
@@ -199,7 +199,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg13.png",
+    bg: "img/bg13.png",
     event: "Uma carta urgente precisa ser entregue fora do horário normal.",
     options: [
       { text: "Fazer a entrega mesmo assim", empatia: 1, ambicao: 1, coragem: 2, adapt: 2, etica: 2 },
@@ -207,7 +207,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg14.png",
+    bg: "img/bg14.png",
     event: "No caminho, um jovem pede ajuda para encontrar um endereço perdido.",
     options: [
       { text: "Ajudar a procurar o local", empatia: 2, ambicao: 0, coragem: 1, adapt: 2, etica: 1 },
@@ -215,7 +215,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg15.png",
+    bg: "img/bg15.png",
     event: "O carteiro encontra uma carta antiga nunca entregue, datada de décadas atrás.",
     options: [
       { text: "Investigar e tentar descobrir o destinatário", empatia: 2, ambicao: 0, coragem: 1, adapt: 2, etica: 2 },
@@ -223,7 +223,7 @@ const scenarios = [
     ]
   },
   {
-    bg: "bg16.png",
+    bg: "img/bg16.png",
     event: "Enquanto o sol se põe, o carteiro observa o caminho percorrido e todas as escolhas feitas.",
     options: [
       { text: "Refletir sobre como cada entrega foi também uma parte de si mesmo.", empatia: 2, ambicao: 0, coragem: 1, adapt: 1, etica: 2 },
@@ -251,7 +251,7 @@ function createIntroScene(){
   introScene.innerHTML = `
     <div class="game-inner" id="gameInner" style="background:black; position:relative; overflow:hidden;">
       <div id="lightOverlay" style="position:absolute; inset:0; background:radial-gradient(circle at center, rgba(255,255,255,0.6) 0%, rgba(0,0,0,0.95) 70%); transition: opacity 2s;"></div>
-      <img src="carteiro.png" id="carteiroSprite" style="position:absolute; bottom:50px; left:50%; transform:translateX(-50%); width:150px; filter:brightness(0); opacity:0; transition: filter 2s, opacity 2s;">
+      <img src="img/carteiro.png" id="carteiroSprite" style="position:absolute; bottom:50px; left:50%; transform:translateX(-50%); width:150px; filter:brightness(0); opacity:0; transition: filter 2s, opacity 2s;">
       <div class="dialogue-box" id="dialogueBox" style="display:none; opacity:0; transition: opacity 1s;"></div>
     </div>
   `;
@@ -340,17 +340,17 @@ function showEvent(scenario) {
     return;
   }
 
-  // Cria os botões de forma dinâmica (sem perder atributos)
+  
   scenario.options.forEach((opt) => {
     const btn = document.createElement('button');
     btn.textContent = opt.text;
-    btn.onclick = () => chooseOption(opt); // mantém o objeto inteiro, inclusive letter:true
+    btn.onclick = () => chooseOption(opt); 
     textBox.appendChild(btn);
   });
 }
 
 function chooseOption(opt) {
-  // Soma pontos
+  
   ambicao += opt.ambicao || 0;
   empatia += opt.empatia || 0;
   coragem += opt.coragem || 0;
@@ -439,8 +439,7 @@ function showLetter() {
   btn.onmouseenter = () => (btn.style.background = '#f0cf9d');
   btn.onmouseleave = () => (btn.style.background = '#d5b48c');
   
-  // ⬇️ Aqui está o truque:
-  // Ao fechar a carta, remove e segue pro próximo cenário
+  
   btn.onclick = () => {
     carta.remove();
     waitingNextScene = true;
@@ -533,7 +532,7 @@ function stopGame() {
      
       gameInner.innerHTML = `
         <div id="lightOverlay" style="position:absolute; inset:0; background:radial-gradient(circle at center, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0.95) 70%); transition: opacity 2s;"></div>
-        <img src="carteiro.png" id="carteiroSpriteFinal" style="position:absolute; bottom:50px; left:50%; transform:translateX(-50%); width:150px; filter:brightness(0); opacity:0; transition: filter 2s, opacity 2s;">
+        <img src="img/carteiro.png" id="carteiroSpriteFinal" style="position:absolute; bottom:50px; left:50%; transform:translateX(-50%); width:150px; filter:brightness(0); opacity:0; transition: filter 2s, opacity 2s;">
         <div class="dialogue-box" id="dialogueFinal" style="display:none; opacity:0; transition: opacity 1s;"></div>
       `;
       gameInner.style.background = "black";

@@ -253,7 +253,7 @@ filter: contrast(1.1) saturate(1.2) brightness(1.05);
   }
 }
 
-/* posições e velocidades diferentes */
+
 .l1 { left: 5%;  animation-duration: 14s; animation-delay: 0s; }
 .l2 { left: 20%; animation-duration: 18s; animation-delay: 3s; }
 .l3 { right: 15%; animation-duration: 16s; animation-delay: 6s; }
@@ -352,14 +352,14 @@ filter: contrast(1.1) saturate(1.2) brightness(1.05);
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('cenario.png');
+  background-image: url('img/cenario.png');
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* muda de center para flex-start */
-  padding-top: 60px; /* adiciona espaço de cima */
+  justify-content: flex-start; 
+  padding-top: 60px; 
   transition: filter 0.1s ease;
   overflow: hidden;
 }
@@ -420,7 +420,7 @@ filter: contrast(1.1) saturate(1.2) brightness(1.05);
   animation: glitchBlink 1s infinite alternate;
 }
 
-/* Animações */
+
 @keyframes floatUp {
   0% {
     transform: translateY(0) scale(1);

@@ -25,7 +25,7 @@ function startVisualEffects() {
     const original = layout.style.backgroundImage;
     layout.style.transition = 'filter 0.3s ease';
     layout.style.filter = "brightness(1.7) contrast(1.5) saturate(2)";
-    layout.style.backgroundImage = "url('cenario2.png')";
+    layout.style.backgroundImage = "url('img/cenario2.png')";
 
     setTimeout(() => {
       flash.style.opacity = '0';
